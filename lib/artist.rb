@@ -10,4 +10,5 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    if  @@all.detect {|i| i.name == song_name}
+    if  @@all.detect {|i| i.name == song_name} == false 
+      
